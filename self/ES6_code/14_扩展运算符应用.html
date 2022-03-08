@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>扩展运算符应用</title>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <script>
+        // 1.数组的合并
+        // // ES5 : concat()
+        // const arr1 = ['小王','小米','小花'];
+        // const arr2 = ['小高','小何','小西'];
+        // const hebin_5 = arr1.concat(arr2);
+        // console.log(hebin_5);
+        // // ES6 : ...
+        // const hebin_6 = [...arr1,...arr2];
+        // console.log(hebin_6);
+
+        // 自创
+        // const arr1 = ['小王','小米','小花'];
+        // const arr2 = ['小高','小何','小西'];
+        // const totalarr = function(...args){
+        //     console.log(args);
+        // }
+        // totalarr(...arr1,...arr2);
+
+        //2.数组的克隆
+        // const zimu = ['E','G','M'];
+        // const copy = [...zimu];
+        // console.log(copy);
+
+        // 3.将伪数组转为真正的数组
+        const divs = document.querySelectorAll('div');
+        const divArr = [...divs];
+        console.log(divs);
+        console.log(divArr);
+    </script>
+
+</body>
+</html>

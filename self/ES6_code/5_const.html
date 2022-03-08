@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>const 定义变量</title>
+</head>
+<body>
+    <script>   
+        //声明常量
+        const SCHOOL = '尚硅谷';
+
+        // console.log(SCHOOL);
+        // 1. 声明必须赋初始值；
+        // const A;                 //报错
+        // 2. 标识符一般为大写（习惯）
+        // const a = 100;           //不报错
+        // 3. 不允许重复声明
+        // SCHOOL = 'ATGUIGU';      //报错
+        // 4. 块儿级作用域（局部变量）
+        // {
+        //     const PLAYER = 'WANG';
+        // }
+        // console.log(PLAYER);     //报错
+        // 5. 对于数组和对象的元素修改，不算做对常量的修改，不会报错
+        const TEAM = ['LIU','CHEN','WANG','WU'];
+        TEAM.push('MAO');           //不报错（常量指向的地址没有改变）
+
+
+    </script>
+    
+</body>
+</html>

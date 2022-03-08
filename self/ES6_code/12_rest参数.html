@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12_rest参数</title>
+</head>
+<body>
+    <script>
+        // ES6 引入 rest 参数，用于获取函数的实参，用来替代 arguments
+        // ES6 获取实参的方式
+        function data(){
+            console.log(arguments);        //返回的是一个arguments对象,arguments是一个伪数组
+        }
+        data('小明','小米','小蜜');
+
+        // rest 参数
+        // function data(...args){
+        //     console.log(args);               // 返回的是一个数组（数组的方法：filter some every map）
+        // }
+        // data('老王','老李','老陈');
+
+        // rest 参数必须要放到参数最后
+        // function fn(a,b,...args){
+        //     console.log(a);
+        //     console.log(b);
+        //     console.log(args);
+        // }
+        // fn(1,2,3,4,5,6,7);
+    </script>
+    
+</body>
+</html>

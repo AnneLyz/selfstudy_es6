@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbol创建对象属性</title>
+</head>
+<body>
+    <script>
+        // 给对象中添加方法 up down
+        // 方法一：
+        let game = {
+            name:'俄罗斯方块',
+            up:function(){},
+            down:function(){}
+        }
+        
+        // 声明一个对象
+        let methods = {
+            up: Symbol('上上上'),
+            down: Symbol('下下下')
+        };
+        
+        console.log(game);
+        
+        game[methods.up] = function(){
+            console.log("我可以飞！！！");
+        }
+        
+        game[methods.down] = function(){
+            console.log("我可以飞流直下三千尺！！！");
+        }
+        console.log(game);
+
+        // 方法二
+        let youxi = {
+            name: '狼人杀',
+            [Symbol('say')]: function(){
+                console.log('我可以发言');
+            },
+            [Symbol('bommm')]:function(){
+                console.log('我可以自爆');
+            }
+        }
+
+        console.log(youxi);
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let</title>
+</head>
+<body>
+    <script>
+        //声明变量
+        // let a;
+        // let b,c,d;
+        // let e = 100;
+        // let f = 521, g = 'iloveyou', h=[];
+
+        //1.变量不允许重复声明
+        // let star = '林志颖';
+        // let star = '佩奇';
+        //以上代码报错
+        // var可以重复声明
+        // var star = '林志颖';
+        // var star = '佩奇';
+        // console.log(star);
+
+        //2.块级作用域（全局、函数、eval）
+        // if else while for
+        // {
+        //     let light = '灯';
+        // }
+        // console.log(light);
+        //以上代码报错
+        // var则没有块级作用域
+        // {
+        //     var light = '灯';
+        // }
+        // console.log(light);
+        
+        //3.let不存在变量提升（代码执行之前会先收集变量）
+        // console.log(song);
+        // let song = '恋爱达人';
+        // 以上代码报错
+        // var存在变量提升
+        // console.log(song);
+        // var song = '恋爱达人';
+        // console.log(song);
+
+        //4.var和let都不影响作用域链
+        // {
+        //     let school = '尚硅谷';
+        //     function fn(){
+        //         console.log(school);
+        //     }
+        //     fn()
+        // }
+        // {
+        //     var school = '尚硅谷';
+        //     function fn(){
+        //         console.log(school);
+        //     }
+        //     fn()
+        // }
+
+        //5.var和let声明未赋值,值都为undefined
+        // let age;
+        // console.log("age:"+age);
+        var cat;
+        console.log("cat:"+cat);
+    </script>
+    
+</body>
+</html>
